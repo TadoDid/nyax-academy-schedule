@@ -1,14 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nyax Academy — Online Maths Tutoring Zimbabwe</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0e1a;color:#fff;overflow-x:hidden;}
 :root{--gold:#f0a500;--gold2:#ffd166;--navy:#0a0e1a;--navy2:#141928;--navy3:#1e2640;--blue:#2563eb;--blue2:#3b82f6;--green:#10b981;--red:#ef4444;}
-.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
 .top-bar{background:#060810;border-bottom:1px solid rgba(255,255,255,0.06);padding:8px 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 .top-bar-left{display:flex;align-items:center;gap:14px;}
 .top-bar-right{display:flex;align-items:center;gap:10px;}
-.academy-logo{height:52px;width:auto;object-fit:contain;}
-.zimsec-logo{height:44px;width:auto;object-fit:contain;border-radius:4px;}
 .top-bar-text{font-size:12px;color:#64748b;line-height:1.4;}
 .top-bar-text strong{color:#94a3b8;display:block;}
 .partner-label{font-size:11px;color:#475569;letter-spacing:.05em;text-transform:uppercase;}
@@ -130,14 +132,16 @@ section{padding:3.5rem 1.5rem;}
 .email-btn:hover{background:#2563eb;}
 footer{background:#060810;border-top:1px solid rgba(255,255,255,0.06);padding:1.75rem 1.5rem;text-align:center;font-size:12px;color:#334155;}
 footer .footer-logos{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:.75rem;flex-wrap:wrap;}
-footer span{color:var(--gold);}footer em{color:#475569;}
+footer span{color:var(--gold);}
+footer em{color:#475569;}
 @media(max-width:900px){.nav-links{display:none;}.hamburger{display:flex;}.stats-grid{grid-template-columns:repeat(2,1fr);}.reg-wrapper{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}.top-bar{justify-content:center;}}
 @media(max-width:600px){.stats-grid{grid-template-columns:repeat(2,1fr);}.contact-grid{grid-template-columns:1fr 1fr;}.hero{padding:3rem 1rem 2.5rem;}.top-bar-right{display:none;}}
 @media(max-width:420px){.contact-grid{grid-template-columns:1fr;}.hero-btns{flex-direction:column;align-items:center;}}
 </style>
+</head>
+<body>
 
-<h2 class="sr-only">Nyax Academy — Online Mathematics Tutoring Zimbabwe. ZIMSEC-aligned. Macandidates paita marks emahara.</h2>
-
+<!-- TOP BAR -->
 <div class="top-bar">
   <div class="top-bar-left">
     <div style="width:48px;height:48px;background:linear-gradient(135deg,#f0a500,#ff6b35);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:#fff;flex-shrink:0;">N</div>
@@ -150,6 +154,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </div>
 
+<!-- NAVIGATION -->
 <nav>
   <div class="nav-inner">
     <div class="logo">
@@ -178,19 +183,21 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div style="display:flex;flex-direction:column;align-items:center;gap:.5rem;margin-bottom:1.5rem;">
     <div class="hero-badge">✦ 2026 Masterclass Programme</div>
     <div class="tutor-tag"><span class="tutor-tag-dot"></span>Macandidates paita marks emahara</div>
   </div>
   <h1>Pass Maths with<br><span>Confidence</span></h1>
-  <p>Expert online tutoring for Forms 3 & 4. Zimbabwe Mathematics Syllabus B — structured, focused, and built to get you through ZIMSEC with flying colours.</p>
+  <p>Expert online tutoring for Forms 3 &amp; 4. Zimbabwe Mathematics Syllabus B — structured, focused, and built to get you through ZIMSEC with flying colours.</p>
   <div class="hero-btns">
     <a href="#register" class="btn-primary">Register for Classes</a>
     <a href="#schedule" class="btn-outline">View Schedule</a>
   </div>
 </section>
 
+<!-- STATS -->
 <section class="stats-section">
   <div class="stats-grid">
     <div class="stat-card"><span class="stat-num" data-target="28" data-suffix="">0</span><span class="stat-lbl">Weeks of Teaching</span></div>
@@ -200,6 +207,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </section>
 
+<!-- WHY US -->
 <section id="why" class="why-section">
   <div class="why-header">
     <div class="section-tag">Why Nyax Academy</div>
@@ -212,6 +220,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </section>
 
+<!-- SCHEDULE -->
 <section id="schedule" class="schedule-section">
   <div class="container">
     <div class="section-tag">Class Schedule</div>
@@ -226,6 +235,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
 <section id="testimonials" class="testi-section">
   <div class="testi-header">
     <div class="section-tag">Student Reviews</div>
@@ -239,6 +249,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </section>
 
+<!-- REGISTER -->
 <section id="register" class="register-section">
   <div class="container">
     <div class="section-tag">Enrolment</div>
@@ -272,7 +283,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
           <button class="form-submit" onclick="submitReg()">Submit Registration via WhatsApp</button>
         </div>
         <div class="success-msg" id="success-msg">
-          <div style="font-size:2rem;margin-bottom:.5rem;">✓</div>
+          <div style="font-size:2rem;margin-bottom:.5rem;">&#10003;</div>
           <div style="font-size:1rem;font-weight:700;color:#6ee7b7;">Registration sent!</div>
           <div style="font-size:12px;color:#64748b;margin-top:.5rem;">We'll confirm your spot on WhatsApp shortly.</div>
         </div>
@@ -291,7 +302,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
         <div class="info-card">
           <h4>What's Included</h4>
           <ul>
-            <li>Full Form 3 & 4 syllabus coverage</li>
+            <li>Full Form 3 &amp; 4 syllabus coverage</li>
             <li>5 revision tests + 2 full mock papers</li>
             <li>Personalised feedback after each test</li>
             <li>School Based Project guidance</li>
@@ -313,6 +324,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="contact-section">
   <div class="container">
     <div class="section-tag">Contact Us</div>
@@ -356,6 +368,7 @@ footer span{color:var(--gold);}footer em{color:#475569;}
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-logos">
     <div style="display:flex;align-items:center;gap:8px;">
@@ -366,14 +379,37 @@ footer span{color:var(--gold);}footer em{color:#475569;}
     <div style="background:#fff;padding:2px 8px;border-radius:4px;font-weight:800;font-size:11px;color:#1a237e;">ZIMSEC</div>
     <span style="color:#334155;font-size:11px;">MoPSE 2024–2030 Syllabus B</span>
   </div>
-  <div>© 2026 <span>Nyax Academy</span> — Online Mathematics Tutoring Zimbabwe. All rights reserved.</div>
+  <div>&copy; 2026 <span>Nyax Academy</span> &mdash; Online Mathematics Tutoring Zimbabwe. All rights reserved.</div>
   <div style="margin-top:.4rem;"><em>Macandidates paita marks emahara</em></div>
 </footer>
 
 <script>
-function toggleMenu(btn){const m=document.getElementById('mobileMenu');m.classList.toggle('open');const s=btn.querySelectorAll('span');if(m.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)';}else{s[0].style.transform='';s[1].style.opacity='1';s[2].style.transform='';}}
-function closeMobileMenu(){const m=document.getElementById('mobileMenu');m.classList.remove('open');document.querySelectorAll('.hamburger span').forEach(s=>{s.style.transform='';s.style.opacity='1';});}
-const whyCards=[
+// ── MOBILE MENU ──────────────────────────────────────────────────
+function toggleMenu(btn) {
+  var m = document.getElementById('mobileMenu');
+  m.classList.toggle('open');
+  var s = btn.querySelectorAll('span');
+  if (m.classList.contains('open')) {
+    s[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+    s[1].style.opacity = '0';
+    s[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+  } else {
+    s[0].style.transform = '';
+    s[1].style.opacity = '1';
+    s[2].style.transform = '';
+  }
+}
+function closeMobileMenu() {
+  var m = document.getElementById('mobileMenu');
+  m.classList.remove('open');
+  document.querySelectorAll('.hamburger span').forEach(function(s) {
+    s.style.transform = '';
+    s.style.opacity = '1';
+  });
+}
+
+// ── DATA ─────────────────────────────────────────────────────────
+var whyCards = [
   {icon:"📋",bg:"rgba(37,99,235,0.15)",title:"Syllabus-Aligned Lessons",text:"Every session maps directly to MoPSE 2024–2030 Syllabus B. No guesswork — just the right content at the right time."},
   {icon:"📝",bg:"rgba(240,165,0,0.15)",title:"Regular Revision Tests",text:"5 timed tests per term including full mock papers mirroring ZIMSEC Paper 1 and Paper 2 formats."},
   {icon:"🎯",bg:"rgba(16,185,129,0.15)",title:"Personalised Weak Areas",text:"Tell us which topics you struggle with when you register — we give them extra attention just for you."},
@@ -381,9 +417,10 @@ const whyCards=[
   {icon:"🖥️",bg:"rgba(139,92,246,0.15)",title:"Live Online Sessions",text:"Interactive live classes using digital tools — GeoGebra, worked examples, and real-time Q&A."},
   {icon:"📊",bg:"rgba(240,165,0,0.15)",title:"Progress Tracking",text:"After every test, receive detailed feedback on your performance and a targeted improvement plan."},
   {icon:"🏆",bg:"rgba(37,99,235,0.15)",title:"Exam Technique Coaching",text:"Learn how to maximise marks — time management, showing full working, and choosing Section B questions."},
-  {icon:"📁",bg:"rgba(16,185,129,0.15)",title:"All Materials Provided",text:"Notes, past papers, worked solutions and SBP guides all included at no extra cost."},
+  {icon:"📁",bg:"rgba(16,185,129,0.15)",title:"All Materials Provided",text:"Notes, past papers, worked solutions and SBP guides all included at no extra cost."}
 ];
-const testimonials=[
+
+var testimonials = [
   {name:"Tatenda Moyo",meta:"Form 4 · Harare",color:"#2563eb",initials:"TM",stars:5,text:"Before Nyax Academy I was failing Maths every term. After just 3 months I passed my mock with a B. The week-by-week structure makes it so easy to follow."},
   {name:"Rudo Chikwanda",meta:"Form 3 · Bulawayo",color:"#059669",initials:"RC",stars:5,text:"The WhatsApp support is what makes Nyax different. Any time I was stuck on logarithms I could message the tutor and get a worked solution within minutes."},
   {name:"Simba Dube",meta:"Form 4 · Gweru",color:"#7c3aed",initials:"SD",stars:5,text:"I ticked circle theorems and matrices when registering. The tutor focused on them heavily and I finally understand them. Best decision I made this year."},
@@ -395,57 +432,206 @@ const testimonials=[
   {name:"Tafadzwa Mhuri",meta:"Form 4 · Harare",color:"#7c3aed",initials:"TH",stars:5,text:"The statistics section was covered so thoroughly. I got full marks on that question in Paper 2. Couldn't have done it without Nyax Academy."},
   {name:"Sandra Makoni",meta:"Form 3 · Bindura",color:"#d97706",initials:"SM",stars:5,text:"My mum registered me in April not expecting much. By June she was telling everyone. The progress I made in just one term is unreal."},
   {name:"Kudakwashe Mhere",meta:"Form 4 · Marondera",color:"#2563eb",initials:"KM",stars:5,text:"Transformations and matrices always confused me. The way they're taught here using actual matrix examples made everything click instantly."},
-  {name:"Precious Sithole",meta:"Form 3 · Gweru",color:"#dc2626",initials:"PS",stars:5,text:"I love that sessions are live so you can ask questions. The tutor never makes you feel silly. Very patient and encouraging throughout."},
+  {name:"Precious Sithole",meta:"Form 3 · Gweru",color:"#dc2626",initials:"PS",stars:5,text:"I love that sessions are live so you can ask questions. The tutor never makes you feel silly. Very patient and encouraging throughout."}
 ];
-const f3Data=[
-  {month:"April 2026",color:"#2563eb",rows:[{label:"Week 1 (Apr 7–11)",topic:"Real Numbers – Irrational numbers, number patterns",type:"lesson"},{label:"Week 2 (Apr 14–18)",topic:"Real Numbers – Standard form, number bases, scales",type:"lesson"},{label:"Week 3 (Apr 22–25)",topic:"Sets – Set builder notation, Venn diagrams",type:"lesson"},{label:"Week 4 (Apr 28–30)",topic:"Financial Maths – Bank statements, compound interest",type:"lesson"}]},
-  {month:"May 2026",color:"#0891b2",rows:[{label:"Week 1 (May 5–9)",topic:"Financial Maths – Commission, hire purchase",type:"lesson"},{label:"Week 2 (May 12–16)",topic:"Mensuration – Combined shapes, cylinders",type:"lesson"},{label:"Week 3 (May 19–23)",topic:"Graphs – Functional notation, linear & quadratic",type:"lesson"},{label:"Week 4 (May 26–30)",topic:"Revision Test 1 + Travel graphs",type:"test"}]},
-  {month:"June 2026",color:"#059669",rows:[{label:"Week 1 (Jun 2–6)",topic:"Variation – Direct & inverse variation",type:"lesson"},{label:"Week 2 (Jun 9–13)",topic:"Algebra – HCF/LCM, factorisation",type:"lesson"},{label:"Week 3 (Jun 16–20)",topic:"Algebra – Simultaneous & quadratic equations",type:"lesson"},{label:"Week 4 (Jun 23–27)",topic:"Algebra – Change of subject, inequalities",type:"lesson"}]},
-  {month:"July 2026",color:"#d97706",rows:[{label:"Week 1 (Jun 30–Jul 4)",topic:"Algebra – Indices & logarithms",type:"lesson"},{label:"Week 2 (Jul 7–11)",topic:"Revision Test 2 + Geometry – Bearings",type:"test"},{label:"Week 3 (Jul 14–18)",topic:"Geometry – Circles, similarity & congruency",type:"lesson"},{label:"Week 4 (Jul 21–25)",topic:"Geometry – Constructions, rotational symmetry",type:"lesson"},{label:"Week 5 (Jul 28–Aug 1)",topic:"Statistics – Grouped data, frequency tables",type:"lesson"}]},
-  {month:"August 2026",color:"#dc2626",rows:[{label:"Week 1 (Aug 4–8)",topic:"Statistics – Histograms, mean/mode/median",type:"lesson"},{label:"Week 2 (Aug 11–15)",topic:"Trigonometry – Pythagoras, trig ratios",type:"lesson"},{label:"Week 3 (Aug 18–22)",topic:"Vectors – Types, operations, magnitude",type:"lesson"},{label:"Week 4 (Aug 25–29)",topic:"Revision Test 3 + Matrices – Operations",type:"test"}]},
-  {month:"September 2026",color:"#7c3aed",rows:[{label:"Week 1 (Sep 1–5)",topic:"Matrices – Inverse matrix, simultaneous eqs",type:"lesson"},{label:"Week 2 (Sep 8–12)",topic:"Probability – Experimental & theoretical",type:"lesson"},{label:"Week 3 (Sep 15–19)",topic:"Transformations – Translation, reflection, rotation",type:"lesson"},{label:"Week 4 (Sep 22–26)",topic:"Revision Test 4 – Full Syllabus Mock Paper 1",type:"test"}]},
-  {month:"October 2026",color:"#0f766e",rows:[{label:"Week 1 (Sep 29–Oct 3)",topic:"Full Revision: Real Numbers → Mensuration",type:"revision"},{label:"Week 2 (Oct 6–10)",topic:"Full Revision: Graphs → Variation → Algebra",type:"revision"},{label:"Week 3 (Oct 13–17)",topic:"Full Revision: Geometry → Trig → Matrices",type:"revision"},{label:"Week 4 (Oct 20–24)",topic:"Revision Test 5 – Full Syllabus Mock Paper 2",type:"test"}]},
+
+var f3Data = [
+  {month:"April 2026",color:"#2563eb",rows:[
+    {label:"Week 1 (Apr 7–11)",topic:"Real Numbers – Irrational numbers, number patterns",type:"lesson"},
+    {label:"Week 2 (Apr 14–18)",topic:"Real Numbers – Standard form, number bases, scales",type:"lesson"},
+    {label:"Week 3 (Apr 22–25)",topic:"Sets – Set builder notation, Venn diagrams",type:"lesson"},
+    {label:"Week 4 (Apr 28–30)",topic:"Financial Maths – Bank statements, compound interest",type:"lesson"}
+  ]},
+  {month:"May 2026",color:"#0891b2",rows:[
+    {label:"Week 1 (May 5–9)",topic:"Financial Maths – Commission, hire purchase",type:"lesson"},
+    {label:"Week 2 (May 12–16)",topic:"Mensuration – Combined shapes, cylinders",type:"lesson"},
+    {label:"Week 3 (May 19–23)",topic:"Graphs – Functional notation, linear & quadratic",type:"lesson"},
+    {label:"Week 4 (May 26–30)",topic:"Revision Test 1 + Travel graphs",type:"test"}
+  ]},
+  {month:"June 2026",color:"#059669",rows:[
+    {label:"Week 1 (Jun 2–6)",topic:"Variation – Direct & inverse variation",type:"lesson"},
+    {label:"Week 2 (Jun 9–13)",topic:"Algebra – HCF/LCM, factorisation",type:"lesson"},
+    {label:"Week 3 (Jun 16–20)",topic:"Algebra – Simultaneous & quadratic equations",type:"lesson"},
+    {label:"Week 4 (Jun 23–27)",topic:"Algebra – Change of subject, inequalities",type:"lesson"}
+  ]},
+  {month:"July 2026",color:"#d97706",rows:[
+    {label:"Week 1 (Jun 30–Jul 4)",topic:"Algebra – Indices & logarithms",type:"lesson"},
+    {label:"Week 2 (Jul 7–11)",topic:"Revision Test 2 + Geometry – Bearings",type:"test"},
+    {label:"Week 3 (Jul 14–18)",topic:"Geometry – Circles, similarity & congruency",type:"lesson"},
+    {label:"Week 4 (Jul 21–25)",topic:"Geometry – Constructions, rotational symmetry",type:"lesson"},
+    {label:"Week 5 (Jul 28–Aug 1)",topic:"Statistics – Grouped data, frequency tables",type:"lesson"}
+  ]},
+  {month:"August 2026",color:"#dc2626",rows:[
+    {label:"Week 1 (Aug 4–8)",topic:"Statistics – Histograms, mean/mode/median",type:"lesson"},
+    {label:"Week 2 (Aug 11–15)",topic:"Trigonometry – Pythagoras, trig ratios",type:"lesson"},
+    {label:"Week 3 (Aug 18–22)",topic:"Vectors – Types, operations, magnitude",type:"lesson"},
+    {label:"Week 4 (Aug 25–29)",topic:"Revision Test 3 + Matrices – Operations",type:"test"}
+  ]},
+  {month:"September 2026",color:"#7c3aed",rows:[
+    {label:"Week 1 (Sep 1–5)",topic:"Matrices – Inverse matrix, simultaneous eqs",type:"lesson"},
+    {label:"Week 2 (Sep 8–12)",topic:"Probability – Experimental & theoretical",type:"lesson"},
+    {label:"Week 3 (Sep 15–19)",topic:"Transformations – Translation, reflection, rotation",type:"lesson"},
+    {label:"Week 4 (Sep 22–26)",topic:"Revision Test 4 – Full Syllabus Mock Paper 1",type:"test"}
+  ]},
+  {month:"October 2026",color:"#0f766e",rows:[
+    {label:"Week 1 (Sep 29–Oct 3)",topic:"Full Revision: Real Numbers → Mensuration",type:"revision"},
+    {label:"Week 2 (Oct 6–10)",topic:"Full Revision: Graphs → Variation → Algebra",type:"revision"},
+    {label:"Week 3 (Oct 13–17)",topic:"Full Revision: Geometry → Trig → Matrices",type:"revision"},
+    {label:"Week 4 (Oct 20–24)",topic:"Revision Test 5 – Full Syllabus Mock Paper 2",type:"test"}
+  ]}
 ];
-const f4Data=[
-  {month:"April 2026",color:"#2563eb",rows:[{label:"Week 1 (Apr 7–11)",topic:"Financial Maths – Foreign exchange, PAYE",type:"lesson"},{label:"Week 2 (Apr 14–18)",topic:"Financial Maths – VAT, customs & excise",type:"lesson"},{label:"Week 3 (Apr 22–25)",topic:"Mensuration – Similar shapes area/volume",type:"lesson"},{label:"Week 4 (Apr 28–30)",topic:"Mensuration – Surface area, prisms, frustums",type:"lesson"}]},
-  {month:"May 2026",color:"#0891b2",rows:[{label:"Week 1 (May 5–9)",topic:"Functional Graphs – Cubic & inverse graphs",type:"lesson"},{label:"Week 2 (May 12–16)",topic:"Travel Graphs – Displacement/velocity-time",type:"lesson"},{label:"Week 3 (May 19–23)",topic:"Variation – Joint & partial variation",type:"lesson"},{label:"Week 4 (May 26–30)",topic:"Revision Test 1 + Algebra – Algebraic fractions",type:"test"}]},
-  {month:"June 2026",color:"#059669",rows:[{label:"Week 1 (Jun 2–6)",topic:"Algebra – Completing the square, quadratic formula",type:"lesson"},{label:"Week 2 (Jun 9–13)",topic:"Algebra – Linear programming",type:"lesson"},{label:"Week 3 (Jun 16–20)",topic:"Geometry – Circle theorems Part 1",type:"lesson"},{label:"Week 4 (Jun 23–27)",topic:"Geometry – Circle theorems Part 2 + Loci",type:"lesson"}]},
-  {month:"July 2026",color:"#d97706",rows:[{label:"Week 1 (Jun 30–Jul 4)",topic:"Geometry – Constructions, bearings, angles",type:"lesson"},{label:"Week 2 (Jul 7–11)",topic:"Revision Test 2 + Statistics – Cumulative freq.",type:"test"},{label:"Week 3 (Jul 14–18)",topic:"Statistics – Median from ogive, quartiles, IQR",type:"lesson"},{label:"Week 4 (Jul 21–25)",topic:"Trigonometry – Cosine rule & sine rule",type:"lesson"},{label:"Week 5 (Jul 28–Aug 1)",topic:"Trigonometry – Area of triangles, 3D problems",type:"lesson"}]},
-  {month:"August 2026",color:"#dc2626",rows:[{label:"Week 1 (Aug 4–8)",topic:"Vectors – Plane shapes, parallel vectors, ratio",type:"lesson"},{label:"Week 2 (Aug 11–15)",topic:"Probability – Combined events, tree diagrams",type:"lesson"},{label:"Week 3 (Aug 18–22)",topic:"Transformations – Reflection & rotation matrices",type:"lesson"},{label:"Week 4 (Aug 25–29)",topic:"Revision Test 3 + Transformations – Enlargement",type:"test"}]},
-  {month:"September 2026",color:"#7c3aed",rows:[{label:"Week 1 (Sep 1–5)",topic:"Transformations – Stretch & shear matrices",type:"lesson"},{label:"Week 2 (Sep 8–12)",topic:"Full Revision: Real Numbers → Algebra",type:"revision"},{label:"Week 3 (Sep 15–19)",topic:"Full Revision: Geometry → Stats → Trig",type:"revision"},{label:"Week 4 (Sep 22–26)",topic:"Revision Test 4 – Full Syllabus Mock Paper 1",type:"test"}]},
-  {month:"October 2026",color:"#0f766e",rows:[{label:"Week 1 (Sep 29–Oct 3)",topic:"Revision Test 5 – Full Syllabus Mock Paper 2",type:"test"},{label:"Week 2 (Oct 6–10)",topic:"Final Targeted Revision: Weak Areas",type:"revision"},{label:"Week 3 (Oct 13–17)",topic:"Exam Prep – Formula review, exam technique",type:"revision"},{label:"Week 4 (Oct 20–24)",topic:"Final Readiness Check + Q&A Session",type:"revision"}]},
+
+var f4Data = [
+  {month:"April 2026",color:"#2563eb",rows:[
+    {label:"Week 1 (Apr 7–11)",topic:"Financial Maths – Foreign exchange, PAYE",type:"lesson"},
+    {label:"Week 2 (Apr 14–18)",topic:"Financial Maths – VAT, customs & excise",type:"lesson"},
+    {label:"Week 3 (Apr 22–25)",topic:"Mensuration – Similar shapes area/volume",type:"lesson"},
+    {label:"Week 4 (Apr 28–30)",topic:"Mensuration – Surface area, prisms, frustums",type:"lesson"}
+  ]},
+  {month:"May 2026",color:"#0891b2",rows:[
+    {label:"Week 1 (May 5–9)",topic:"Functional Graphs – Cubic & inverse graphs",type:"lesson"},
+    {label:"Week 2 (May 12–16)",topic:"Travel Graphs – Displacement/velocity-time",type:"lesson"},
+    {label:"Week 3 (May 19–23)",topic:"Variation – Joint & partial variation",type:"lesson"},
+    {label:"Week 4 (May 26–30)",topic:"Revision Test 1 + Algebra – Algebraic fractions",type:"test"}
+  ]},
+  {month:"June 2026",color:"#059669",rows:[
+    {label:"Week 1 (Jun 2–6)",topic:"Algebra – Completing the square, quadratic formula",type:"lesson"},
+    {label:"Week 2 (Jun 9–13)",topic:"Algebra – Linear programming",type:"lesson"},
+    {label:"Week 3 (Jun 16–20)",topic:"Geometry – Circle theorems Part 1",type:"lesson"},
+    {label:"Week 4 (Jun 23–27)",topic:"Geometry – Circle theorems Part 2 + Loci",type:"lesson"}
+  ]},
+  {month:"July 2026",color:"#d97706",rows:[
+    {label:"Week 1 (Jun 30–Jul 4)",topic:"Geometry – Constructions, bearings, angles",type:"lesson"},
+    {label:"Week 2 (Jul 7–11)",topic:"Revision Test 2 + Statistics – Cumulative freq.",type:"test"},
+    {label:"Week 3 (Jul 14–18)",topic:"Statistics – Median from ogive, quartiles, IQR",type:"lesson"},
+    {label:"Week 4 (Jul 21–25)",topic:"Trigonometry – Cosine rule & sine rule",type:"lesson"},
+    {label:"Week 5 (Jul 28–Aug 1)",topic:"Trigonometry – Area of triangles, 3D problems",type:"lesson"}
+  ]},
+  {month:"August 2026",color:"#dc2626",rows:[
+    {label:"Week 1 (Aug 4–8)",topic:"Vectors – Plane shapes, parallel vectors, ratio",type:"lesson"},
+    {label:"Week 2 (Aug 11–15)",topic:"Probability – Combined events, tree diagrams",type:"lesson"},
+    {label:"Week 3 (Aug 18–22)",topic:"Transformations – Reflection & rotation matrices",type:"lesson"},
+    {label:"Week 4 (Aug 25–29)",topic:"Revision Test 3 + Transformations – Enlargement",type:"test"}
+  ]},
+  {month:"September 2026",color:"#7c3aed",rows:[
+    {label:"Week 1 (Sep 1–5)",topic:"Transformations – Stretch & shear matrices",type:"lesson"},
+    {label:"Week 2 (Sep 8–12)",topic:"Full Revision: Real Numbers → Algebra",type:"revision"},
+    {label:"Week 3 (Sep 15–19)",topic:"Full Revision: Geometry → Stats → Trig",type:"revision"},
+    {label:"Week 4 (Sep 22–26)",topic:"Revision Test 4 – Full Syllabus Mock Paper 1",type:"test"}
+  ]},
+  {month:"October 2026",color:"#0f766e",rows:[
+    {label:"Week 1 (Sep 29–Oct 3)",topic:"Revision Test 5 – Full Syllabus Mock Paper 2",type:"test"},
+    {label:"Week 2 (Oct 6–10)",topic:"Final Targeted Revision: Weak Areas",type:"revision"},
+    {label:"Week 3 (Oct 13–17)",topic:"Exam Prep – Formula review, exam technique",type:"revision"},
+    {label:"Week 4 (Oct 20–24)",topic:"Final Readiness Check + Q&A Session",type:"revision"}
+  ]}
 ];
-const allTopics=["Real Numbers","Sets","Financial Maths","Mensuration","Graphs","Variation","Algebra","Geometry","Statistics","Trigonometry","Vectors","Matrices","Probability","Transformations"];
-function buildWhyRow(r,items){[...items,...items].forEach(c=>{const d=document.createElement('div');d.className='why-card';d.innerHTML=`<div class="why-icon" style="background:${c.bg};">${c.icon}</div><h3>${c.title}</h3><p>${c.text}</p>`;r.appendChild(d);});}
-function buildTestiRow(r,items){[...items,...items].forEach(t=>{const d=document.createElement('div');d.className='testi-card';d.innerHTML=`<div class="testi-top"><div class="testi-avatar" style="background:${t.color}25;color:${t.color};">${t.initials}</div><div><div class="testi-name">${t.name}</div><div class="testi-meta">${t.meta}</div></div></div><div class="testi-stars">${'★'.repeat(t.stars)}</div><div class="testi-text">"${t.text}"</div>`;r.appendChild(d);});}
-function buildSchedule(data,id){const c=document.getElementById(id);c.innerHTML='';data.forEach(m=>{const card=document.createElement('div');card.className='month-card';let rows='';m.rows.forEach(r=>{const dc=r.type==='test'?'#ef4444':r.type==='revision'?'#10b981':'#3b82f6';const badge=r.type==='test'?'<span class="test-badge">TEST</span>':r.type==='revision'?'<span class="rev-badge">REVISION</span>':'';rows+=`<div class="week-row"><div class="week-dot" style="background:${dc}"></div><div class="week-info"><div class="week-label">${r.label}</div><div class="week-topic">${r.topic}</div>${badge}</div></div>`;});card.innerHTML=`<div class="month-head" style="background:${m.color}20;color:${m.color};">${m.month}</div><div class="month-rows">${rows}</div>`;c.appendChild(card);});}
-function buildTopics(){const g=document.getElementById('topics-grid');allTopics.forEach(t=>{const l=document.createElement('label');l.className='topic-check';l.innerHTML=`<input type="checkbox" name="topic" value="${t}"> ${t}`;g.appendChild(l);});}
-function showForm(form,btn){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');document.getElementById('f3-schedule').style.display=form==='f3'?'grid':'none';document.getElementById('f4-schedule').style.display=form==='f4'?'grid':'none';}
-function submitReg(){
-  const fname=document.getElementById('fname').value.trim();
-  const lname=document.getElementById('lname').value.trim();
-  const phone=document.getElementById('phone').value.trim();
-  const level=document.getElementById('form-level').value;
-  if(!fname||!phone||!level){alert('Please fill in your name, WhatsApp number, and form level.');return;}
-  const checked=[...document.querySelectorAll('input[name="topic"]:checked')].map(c=>c.value);
-  const notes=document.getElementById('notes').value.trim();
-  let msg=`Hi Nyax Academy! I'd like to register for the Maths Masterclass.%0A%0A*Name:* ${fname} ${lname}%0A*Form:* ${level}%0A*Phone:* ${phone}`;
-  if(checked.length) msg+=`%0A*Weak Topics:* ${checked.join(', ')}`;
-  if(notes) msg+=`%0A*Notes:* ${notes}`;
-  window.open(`https://wa.me/263787473729?text=${msg}`,'_blank');
-  document.getElementById('reg-form-wrap').style.display='none';
-  document.getElementById('success-msg').style.display='block';
+
+var allTopics = ["Real Numbers","Sets","Financial Maths","Mensuration","Graphs","Variation","Algebra","Geometry","Statistics","Trigonometry","Vectors","Matrices","Probability","Transformations"];
+
+// ── BUILD FUNCTIONS ───────────────────────────────────────────────
+function buildWhyRow(rowEl, items) {
+  var doubled = items.concat(items);
+  doubled.forEach(function(c) {
+    var d = document.createElement('div');
+    d.className = 'why-card';
+    d.innerHTML = '<div class="why-icon" style="background:' + c.bg + ';">' + c.icon + '</div><h3>' + c.title + '</h3><p>' + c.text + '</p>';
+    rowEl.appendChild(d);
+  });
 }
-function animateCount(el){const target=parseInt(el.dataset.target);const suffix=el.dataset.suffix||'';const dur=1800;const start=performance.now();function step(now){const p=Math.min((now-start)/dur,1);const ease=1-Math.pow(1-p,3);el.textContent=Math.round(ease*target)+suffix;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
-let counted=false;
-const obs=new IntersectionObserver(e=>{if(e[0].isIntersecting&&!counted){counted=true;document.querySelectorAll('.stat-num[data-target]').forEach(animateCount);}},{threshold:0.4});
+
+function buildTestiRow(rowEl, items) {
+  var doubled = items.concat(items);
+  doubled.forEach(function(t) {
+    var d = document.createElement('div');
+    d.className = 'testi-card';
+    d.innerHTML = '<div class="testi-top"><div class="testi-avatar" style="background:' + t.color + '25;color:' + t.color + ';">' + t.initials + '</div><div><div class="testi-name">' + t.name + '</div><div class="testi-meta">' + t.meta + '</div></div></div><div class="testi-stars">' + '★'.repeat(t.stars) + '</div><div class="testi-text">"' + t.text + '"</div>';
+    rowEl.appendChild(d);
+  });
+}
+
+function buildSchedule(data, id) {
+  var c = document.getElementById(id);
+  c.innerHTML = '';
+  data.forEach(function(m) {
+    var card = document.createElement('div');
+    card.className = 'month-card';
+    var rows = '';
+    m.rows.forEach(function(r) {
+      var dc = r.type === 'test' ? '#ef4444' : r.type === 'revision' ? '#10b981' : '#3b82f6';
+      var badge = r.type === 'test' ? '<span class="test-badge">TEST</span>' : r.type === 'revision' ? '<span class="rev-badge">REVISION</span>' : '';
+      rows += '<div class="week-row"><div class="week-dot" style="background:' + dc + '"></div><div class="week-info"><div class="week-label">' + r.label + '</div><div class="week-topic">' + r.topic + '</div>' + badge + '</div></div>';
+    });
+    card.innerHTML = '<div class="month-head" style="background:' + m.color + '20;color:' + m.color + ';">' + m.month + '</div><div class="month-rows">' + rows + '</div>';
+    c.appendChild(card);
+  });
+}
+
+function buildTopics() {
+  var g = document.getElementById('topics-grid');
+  allTopics.forEach(function(t) {
+    var lbl = document.createElement('label');
+    lbl.className = 'topic-check';
+    lbl.innerHTML = '<input type="checkbox" name="topic" value="' + t + '"> ' + t;
+    g.appendChild(lbl);
+  });
+}
+
+function showForm(form, btn) {
+  document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById('f3-schedule').style.display = form === 'f3' ? 'grid' : 'none';
+  document.getElementById('f4-schedule').style.display = form === 'f4' ? 'grid' : 'none';
+}
+
+function submitReg() {
+  var fname = document.getElementById('fname').value.trim();
+  var lname = document.getElementById('lname').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var level = document.getElementById('form-level').value;
+  if (!fname || !phone || !level) { alert('Please fill in your name, WhatsApp number, and form level.'); return; }
+  var checked = Array.from(document.querySelectorAll('input[name="topic"]:checked')).map(function(c) { return c.value; });
+  var notes = document.getElementById('notes').value.trim();
+  var msg = 'Hi Nyax Academy! I\'d like to register for the Maths Masterclass.%0A%0A*Name:* ' + fname + ' ' + lname + '%0A*Form:* ' + level + '%0A*Phone:* ' + phone;
+  if (checked.length) msg += '%0A*Weak Topics:* ' + checked.join(', ');
+  if (notes) msg += '%0A*Notes:* ' + notes;
+  window.open('https://wa.me/263787473729?text=' + msg, '_blank');
+  document.getElementById('reg-form-wrap').style.display = 'none';
+  document.getElementById('success-msg').style.display = 'block';
+}
+
+// ── SCROLL COUNTER ────────────────────────────────────────────────
+function animateCount(el) {
+  var target = parseInt(el.dataset.target);
+  var suffix = el.dataset.suffix || '';
+  var dur = 1800;
+  var start = performance.now();
+  function step(now) {
+    var p = Math.min((now - start) / dur, 1);
+    var ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(ease * target) + suffix;
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+var counted = false;
+var obs = new IntersectionObserver(function(entries) {
+  if (entries[0].isIntersecting && !counted) {
+    counted = true;
+    document.querySelectorAll('.stat-num[data-target]').forEach(animateCount);
+  }
+}, { threshold: 0.4 });
 obs.observe(document.querySelector('.stats-section'));
-buildWhyRow(document.getElementById('why-row1'),whyCards.slice(0,4));
-buildWhyRow(document.getElementById('why-row2'),whyCards.slice(4,8));
-buildTestiRow(document.getElementById('testi-row1'),testimonials.slice(0,4));
-buildTestiRow(document.getElementById('testi-row2'),testimonials.slice(4,8));
-buildTestiRow(document.getElementById('testi-row3'),testimonials.slice(8,12));
-buildSchedule(f3Data,'f3-schedule');
-buildSchedule(f4Data,'f4-schedule');
+
+// ── INIT ──────────────────────────────────────────────────────────
+buildWhyRow(document.getElementById('why-row1'), whyCards.slice(0, 4));
+buildWhyRow(document.getElementById('why-row2'), whyCards.slice(4, 8));
+buildTestiRow(document.getElementById('testi-row1'), testimonials.slice(0, 4));
+buildTestiRow(document.getElementById('testi-row2'), testimonials.slice(4, 8));
+buildTestiRow(document.getElementById('testi-row3'), testimonials.slice(8, 12));
+buildSchedule(f3Data, 'f3-schedule');
+buildSchedule(f4Data, 'f4-schedule');
 buildTopics();
 </script>
+</body>
+</html>
